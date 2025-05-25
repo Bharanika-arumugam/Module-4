@@ -1,17 +1,18 @@
+
 # Classes and Objects in Python: Calculate the Area of a Circle
 
 ## 🎯 Aim
-To write a Python program that calculates the **area of a circle** based on the radius provided by the user. This program uses a class named `pen` and a method `stationary` to perform the calculation.
+To write a Python program that calculates the *area of a circle* based on the radius provided by the user. This program uses a class named pen and a method stationary to perform the calculation.
 
 ## 🧠 Algorithm
-1. **Get user input**: Take the radius of the circle as input from the user.
-2. **Define the class**: Create a class named `pen`.
-3. **Define the method**: Inside the class, define the method `stationary` to calculate the area of the circle using the formula:  
+1. *Get user input*: Take the radius of the circle as input from the user.
+2. *Define the class*: Create a class named pen.
+3. *Define the method*: Inside the class, define the method stationary to calculate the area of the circle using the formula:  
    Area = pi *r^2 
-4. **Execute the program**: Create an object of the class and call the method with the radius value.
+4. *Execute the program*: Create an object of the class and call the method with the radius value.
 
 ## 🧾 Program
-``` python
+ python
 import math
 class pen:
     def stationary(self,r):
@@ -19,13 +20,13 @@ class pen:
 r=int(input())
 h=pen()
 print("Area of circle:",round(h.stationary(r),2))
-```
+
 
 ## Output
 ![image](https://github.com/user-attachments/assets/84e29a69-13e8-401b-8d27-358159c8b247)
 
 ## Result
-Thus Python program that calculates the **area of a circle** is executed successfully.
+Thus Python program that calculates the *area of a circle* is executed successfully.
 
 ## Dictionary Operations in Python: Merging Two Dictionaries
 
@@ -55,14 +56,14 @@ To Write a Python program to convert them into a dictionary in a way that item f
 
 11.End
 ## 🧾 Program
-``` python
+ python
 keys = input()
 values = input()
 keys_list = eval(keys)
 values_list = eval(values)
 result = dict(zip(keys_list, values_list))
 print(result)
-```
+
 
 ## Output
 ![image](https://github.com/user-attachments/assets/200b8898-ca1e-4101-a571-650bd5daf6fd)
@@ -88,21 +89,21 @@ To write a Python program that sorts a dictionary's:
 
 ## 🧠 Algorithm
 
-1. **Start the program.**
-2. **Define** a dictionary with key-value pairs.
-3. **Sort by Keys**:
-   - Use `sorted(dictionary.items())`
-   - Convert the result to a dictionary using `dict()`
-4. **Sort by Values**:
-   - Use `sorted(dictionary.items(), key=lambda item: item[1])`
-   - Convert the result to a dictionary using `dict()`
-5. **Display** the original and sorted dictionaries.
-6. **End the program.**
+1. *Start the program.*
+2. *Define* a dictionary with key-value pairs.
+3. *Sort by Keys*:
+   - Use sorted(dictionary.items())
+   - Convert the result to a dictionary using dict()
+4. *Sort by Values*:
+   - Use sorted(dictionary.items(), key=lambda item: item[1])
+   - Convert the result to a dictionary using dict()
+5. *Display* the original and sorted dictionaries.
+6. *End the program.*
 
 ---
 
 ## 🧪Program
-``` python
+ python
 def sort_dict_by_values(d):
     return sorted(d.items(), key=lambda item: item[1])
 my_dict = {3: 323,2: 56,4: 24, 6: 18,5: 12, 1: 2}
@@ -110,7 +111,7 @@ sorted_items = sort_dict_by_values(my_dict)
 print("Keys and Values sorted in alphabetical order by the value")
 print(sorted_items)
 
-```
+
 
 ## Sample Output
 ![image](https://github.com/user-attachments/assets/e432bc44-1ec9-439d-8c4a-0801d6b29c30)
@@ -121,7 +122,7 @@ Thus the  Python program to sort a dictionary is executed successfully.
 # Exception Handling in Python: Avoiding Index Errors
 
 ## 🎯 Aim
-To write a Python program that handles an **IndexError** when trying to access an element beyond the available range of a list.
+To write a Python program that handles an *IndexError* when trying to access an element beyond the available range of a list.
 
 ## 🧠 Algorithm
 1.Start
@@ -148,7 +149,7 @@ a. Print a message saying that the 11th element is not available (e.g., "10 is n
 
 
 ## 🧾 Program
-``` python
+ python
 try:
     a = []
     n = int(input())
@@ -162,12 +163,12 @@ try:
 except IndexError:
    
     print("10 is not accepted")
-```
+
 ## Output
 ![image](https://github.com/user-attachments/assets/bdc74ae9-6d48-431f-adda-801a0cfd739a)
 
 ## Result
-Thus the a Python program that handles an **IndexError** is executed successfully.
+Thus the a Python program that handles an *IndexError* is executed successfully.
 
 # File Handling in Python: Count Lines Not Starting with 'T'
 
@@ -201,7 +202,7 @@ How it works:
 Opens the file in read mode and returns the entire content as a string
 
 ## 🧾 Program
-``` python
+ python
 def create_file(file_path, content):
     with open(file_path, 'w') as file:
         file.write(content)
@@ -216,7 +217,7 @@ def find_and_replace(file_path, old_word, new_word):
 def read_file(file_path):
     with open(file_path, 'r') as file:
         return file.read()
-```
+
 ## Output
 ![image](https://github.com/user-attachments/assets/3cce9630-0e78-46ae-8047-d13e862e936c)
 
